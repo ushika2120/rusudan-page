@@ -1,0 +1,255 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+ul {
+  list-style-type: none;
+}
+fieldset,
+input,
+select,
+textarea,
+button {
+  border: none;
+}
+@font-face {
+  font-family: lavishi;
+  src: url(../font/Quintessential-Regular.ttf);
+}
+@font-face {
+  font-family: nino;
+  src: url(../font/bpg_nino_mtavruli_bold.ttf);
+}
+.main_conteiner {
+  width: 100%;
+  position: relative;
+}
+.head_row {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  background-color: rgba(129, 238, 69, 0.25);
+  border-bottom: 2px solid gold;
+  position: fixed;
+}
+.logo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-left: 20px;
+  margin-top: 5px;
+}
+.title_box {
+  width: 15%;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.title {
+  font-weight: 700;
+  font-size: 28px;
+  font-family: lavishi;
+  letter-spacing: 2px;
+  color: gold;
+  text-shadow: 3px 5px 2px #474747;
+}
+.nav_row {
+  width: 45%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  .nav_text {
+    font-weight: 300;
+    font-size: 20px;
+    font-family: nino;
+    letter-spacing: 1px;
+    color: rgb(53, 52, 49);
+    text-shadow:
+      -1px -1px 1px rgba(255, 255, 255, 0.1),
+      1px 1px 1px rgba(0, 0, 0, 0.5);
+  }
+}
+.soc_box {
+  width: 20%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.laser_icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.conteiner {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  background-image: url(../photo/from-laser-hair-removal-featured.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.losung_box {
+  width: 50%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 150px;
+  .losung {
+    font-weight: 700;
+    font-size: 32px;
+    letter-spacing: 1px;
+    font-family: nino;
+    text-shadow:
+      0 0 5px #fff,
+      0 0 10px #fff,
+      0 0 15px #fff,
+      0 0 20px #49ff18,
+      0 0 30px #49ff18,
+      0 0 40px #49ff18,
+      0 0 55px #49ff18,
+      0 0 75px #49ff18;
+  }
+}
+.mid_part {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+}
+.cover_box {
+  width: 30%;
+  height: 400px;
+  display: flex;
+  justify-content: end;
+  align-items: start;
+  .cover {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+  }
+}
+.icons_row {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 10px;
+  padding-right: 50px;
+  padding-top: 25px;
+}
+.icon_box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 18px;
+}
+.ic_text {
+  font-weight: 300;
+  font-size: 16px;
+  font-family: nino;
+  letter-spacing: 1px;
+  color: rgb(53, 52, 49);
+  text-shadow:
+    -1px -1px 1px rgba(255, 255, 255, 0.1),
+    1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+.bottom_part {
+  width: 100%;
+  height: 1000px;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(251, 234, 214, 0.675);
+  border-top: 2px solid gold;
+}
+.bottem_row {
+  width: 100%;
+  height: 1000px;
+  display: flex;
+  padding-left: 70px;
+  align-items: center;
+}
+.left_box {
+  width: 30%;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  gap: 30px;
+}
+.mid_box {
+  width: 30%;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  gap: 30px;
+}
+.rt_box {
+  width: 30%;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  gap: 30px;
+}
+.mashin {
+  width: 80%;
+  height: 450px;
+  border-radius: 16px;
+  border: 1px solid gold;
+}
+.text_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.text {
+  font-weight: 300;
+  font-size: 20px;
+  font-family: nino;
+  letter-spacing: 1px;
+  color: rgb(53, 52, 49);
+  text-shadow:
+    -1px -1px 1px rgba(255, 255, 255, 0.1),
+    1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+.mark {
+  width: 25px;
+  height: 25px;
+}
+.footer_part {
+  width: 100%;
+  height: 465px;
+  background-color: rgba(129, 238, 69, 0.25);
+  border-top: 2px solid gold;
+}
+.soc_icon {
+  width: 30px;
+  height: 30px;
+}
