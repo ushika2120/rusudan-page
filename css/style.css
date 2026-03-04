@@ -5,7 +5,6 @@
 }
 a {
   text-decoration: none;
-  color: black;
 }
 ul {
   list-style-type: none;
@@ -34,7 +33,7 @@ button {
   height: 100px;
   display: flex;
   align-items: center;
-  background-color: rgba(129, 238, 69, 0.25);
+  background-color: rgba(219, 227, 214, 0.25);
   border-bottom: 2px solid gold;
   position: fixed;
 }
@@ -57,8 +56,7 @@ button {
   font-size: 28px;
   font-family: lavishi;
   letter-spacing: 2px;
-  color: gold;
-  text-shadow: 3px 5px 2px #474747;
+  color: rgb(53, 52, 49);
 }
 .nav_row {
   width: 45%;
@@ -73,12 +71,9 @@ button {
     font-family: nino;
     letter-spacing: 1px;
     color: rgb(53, 52, 49);
-    text-shadow:
-      -1px -1px 1px rgba(255, 255, 255, 0.1),
-      1px 1px 1px rgba(0, 0, 0, 0.5);
   }
 }
-.soc_box {
+.search_box {
   width: 20%;
   height: 100px;
   display: flex;
@@ -86,12 +81,36 @@ button {
   align-items: center;
   gap: 30px;
 }
+.search {
+  width: 200px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-right: 70px;
+}
+.gsearch {
+  width: 200px;
+  height: 30px;
+  border-radius: 16px;
+  border: none;
+  outline: none;
+  background-color: rgb(225, 234, 219);
+  padding-left: 20px;
+}
+.lupa {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  right: 5px;
+  top: 3px;
+}
 .laser_icon {
   width: 50px;
   height: 50px;
   border-radius: 50%;
 }
-
 .conteiner {
   width: 100%;
   height: 100vh;
@@ -115,15 +134,7 @@ button {
     font-size: 32px;
     letter-spacing: 1px;
     font-family: nino;
-    text-shadow:
-      0 0 5px #fff,
-      0 0 10px #fff,
-      0 0 15px #fff,
-      0 0 20px #49ff18,
-      0 0 30px #49ff18,
-      0 0 40px #49ff18,
-      0 0 55px #49ff18,
-      0 0 75px #49ff18;
+    color: rgb(53, 52, 49);
   }
 }
 .mid_part {
@@ -149,7 +160,7 @@ button {
   display: flex;
   justify-content: end;
   align-items: center;
-  gap: 10px;
+  gap: 20px;
   padding-right: 50px;
   padding-top: 25px;
 }
@@ -158,7 +169,7 @@ button {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: 15px;
 }
 .icon {
   width: 50px;
@@ -171,9 +182,6 @@ button {
   font-family: nino;
   letter-spacing: 1px;
   color: rgb(53, 52, 49);
-  text-shadow:
-    -1px -1px 1px rgba(255, 255, 255, 0.1),
-    1px 1px 1px rgba(0, 0, 0, 0.5);
 }
 .bottom_part {
   width: 100%;
@@ -235,9 +243,6 @@ button {
   font-family: nino;
   letter-spacing: 1px;
   color: rgb(53, 52, 49);
-  text-shadow:
-    -1px -1px 1px rgba(255, 255, 255, 0.1),
-    1px 1px 1px rgba(0, 0, 0, 0.5);
 }
 .mark {
   width: 25px;
@@ -246,8 +251,64 @@ button {
 .footer_part {
   width: 100%;
   height: 465px;
-  background-color: rgba(129, 238, 69, 0.25);
+  display: flex;
+  align-items: center;
+  background-color: rgba(251, 234, 214, 0.763);
   border-top: 2px solid gold;
+  padding-left: 50px;
+  gap: 30px;
+}
+
+.contact_box {
+  width: 30%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.contact {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding-top: 25px;
+}
+
+.cont_icon {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+}
+.cont_text {
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+  font-weight: 300;
+  font-size: 14px;
+  font-family: nino;
+  letter-spacing: 1px;
+  color: rgb(53, 52, 49);
+
+  text-align: center;
+}
+.nav_list {
+  width: 30%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .cont_text {
+    padding-top: 30px;
+    text-shadow: none;
+  }
+}
+.soc_box {
+}
+.soc_list {
+  width: 30%;
+  height: 400px;
+  display: flex;
+  gap: 30px;
 }
 .soc_icon {
   width: 30px;
