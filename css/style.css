@@ -24,13 +24,21 @@ button {
   font-family: nino;
   src: url(../font/bpg_nino_mtavruli_bold.ttf);
 }
+@font-face {
+  font-family: ako;
+  src: url(../font/akolkhetih.ttf);
+}
+@font-face {
+  font-family: akko;
+  src: url(../font/alk_dots.otf);
+}
 .main_conteiner {
   width: 100%;
   position: relative;
 }
 .head_row {
   width: 100%;
-  height: 100px;
+  height: 80px;
   display: flex;
   align-items: center;
   background-color: rgba(219, 227, 214, 0.25);
@@ -38,10 +46,9 @@ button {
   position: fixed;
 }
 .logo {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  margin-left: 20px;
+  width: 90px;
+  height: 60px;
+  margin-left: 100px;
   margin-top: 5px;
 }
 .title_box {
@@ -53,10 +60,13 @@ button {
 }
 .title {
   font-weight: 700;
-  font-size: 28px;
-  font-family: lavishi;
-  letter-spacing: 2px;
-  color: rgb(53, 52, 49);
+  font-size: 20px;
+  font-family: akko;
+  letter-spacing: 1px;
+  color: rgb(91, 87, 78);
+}
+.menu_box {
+  display: none;
 }
 .nav_row {
   width: 45%;
@@ -64,13 +74,16 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 30px;
+  gap: 40px;
   .nav_text {
     font-weight: 300;
-    font-size: 20px;
+    font-size: 16px;
     font-family: nino;
     letter-spacing: 1px;
-    color: rgb(53, 52, 49);
+    color: rgb(91, 87, 78);
+  }
+  .nav_text:hover {
+    color: white;
   }
 }
 .search_box {
@@ -115,8 +128,7 @@ button {
   width: 100%;
   height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+
   gap: 20px;
   background-image: url(../photo/from-laser-hair-removal-featured.webp);
   background-repeat: no-repeat;
@@ -128,19 +140,22 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 150px;
+  margin-top: 80px;
   .losung {
     font-weight: 700;
-    font-size: 32px;
+    font-size: 52px;
     letter-spacing: 1px;
     font-family: nino;
-    color: rgb(53, 52, 49);
+    color: rgb(249, 248, 246);
   }
 }
 .mid_part {
   width: 100%;
+  height: 100vh;
   display: flex;
-  justify-content: end;
+  flex-direction: column;
+  align-items: end;
+  justify-content: center;
 }
 .cover_box {
   width: 30%;
@@ -181,7 +196,7 @@ button {
   font-size: 16px;
   font-family: nino;
   letter-spacing: 1px;
-  color: rgb(53, 52, 49);
+  color: rgb(91, 87, 78);
 }
 .bottom_part {
   width: 100%;
@@ -242,7 +257,7 @@ button {
   font-size: 20px;
   font-family: nino;
   letter-spacing: 1px;
-  color: rgb(53, 52, 49);
+  color: rgb(91, 87, 78);
 }
 .mark {
   width: 25px;
@@ -303,14 +318,66 @@ button {
   }
 }
 .soc_box {
+  width: 30%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
 }
 .soc_list {
   width: 30%;
-  height: 400px;
+  height: 100px;
   display: flex;
   gap: 30px;
 }
 .soc_icon {
   width: 30px;
   height: 30px;
+}
+.rights {
+  width: 100%;
+  height: 100px;
+  display: flex;
+
+  gap: 20px;
+  .bottom_logo {
+    width: 80px;
+    height: 80px;
+  }
+}
+.copy {
+  width: 500px;
+}
+@media (max-width: 1080px) {
+  .head_row {
+    .logo {
+      margin-left: 30px;
+    }
+  }
+  .menu_box {
+    display: block;
+    .menu {
+      width: 50px;
+      height: 50px;
+    }
+  }
+  .nav_row {
+    display: none;
+  }
+
+  .search_box {
+    width: 60%;
+    height: 100px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 30px;
+  }
+  .title_box {
+    width: 25%;
+    height: 100px;
+  }
+
+  .losung_box {
+    margin-top: 10px;
+  }
 }
