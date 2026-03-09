@@ -466,9 +466,9 @@ button {
     width: 100%;
     height: 80px;
   }
-  .losung { 
-  font-size: 26px; 
-}
+  .losung {
+    font-size: 26px;
+  }
   .cover_box {
     width: 100%;
     justify-content: center;
@@ -480,18 +480,17 @@ button {
   .title_box {
     width: 45%;
     margin-left: 10px;
-
   }
   .title {
     font-size: 12px;
   }
-  .logo{
+  .logo {
     padding-left: 10px;
   }
-  .items_box{
+  .items_box {
     gap: 10px;
   }
-  .item{
+  .item {
     width: 15px;
     height: 15px;
   }
@@ -499,7 +498,7 @@ button {
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: end;
+    justify-content: center;
     align-items: center;
     gap: 20px;
     margin-top: 50px;
@@ -537,79 +536,77 @@ button {
     gap: 10px;
   }
   .contact_box {
-  width: 100%;
-  height: 200px;
-  display: flex;
-  flex-direction: column;
-  gap: 0;
-}
-.nav_list{
-  width: 100%;
-  height: 200px;
-  align-items: start;
-  
-}
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+  .nav_list {
+    width: 100%;
+    height: 200px;
+    align-items: start;
+  }
 
-.soc_box{
-  width: 100%;
-  height: 100px;
-}
+  .soc_box {
+    width: 100%;
+    height: 100px;
+  }
 
-.soc_list{
-  height: 70px;
-}
+  .soc_list {
+    height: 70px;
+  }
 
-.icon {
-  width: 20px;
-  height: 20px;
-  border-radius: 18px;
-}
-.ic_text {
-  font-weight: 500;
-  font-size: 12px;
-}
-.icons_row {
-  width: 100%;
-  height: 80px;
-  
-  justify-content: center;
-  
-  gap: 5px;
-  padding-right: 0;
-  
-}
-.rights{
-  gap: 0;
-}
-.cont_text{
-  font-size: 12px;
+  .icon {
+    width: 20px;
+    height: 20px;
+    border-radius: 18px;
+  }
+  .ic_text {
+    font-weight: 500;
+    font-size: 12px;
+  }
+  .icons_row {
+    width: 100%;
+    height: 80px;
 
+    justify-content: center;
+
+    gap: 5px;
+    padding-right: 0;
+  }
+  .rights {
+    gap: 0;
+  }
+  .cont_text {
+    font-size: 12px;
+  }
 }
-}
-@media (max-width:420px) {
-  .cover_box{
+@media (max-width: 420px) {
+  .cover_box {
     background-image: url(../photo/cover.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 20px;
   }
-.cover{
-  display: none;
-}
- 
-  .bottom_part{
+  .cover {
+    display: none;
+  }
+
+  .bottom_part {
     padding-top: 10px;
-   gap: 10px;
-  }
-  .icons_row{
-    height: 800px;
-    
-    flex-direction: column;
-  }
-  .footer_part{
+    gap: 10px;
     border-top: none;
   }
-  .mashin{
+  .icons_row {
+    height: 800px;
+
+    flex-direction: column;
+  }
+  .footer_part {
+    border-top: none;
+  }
+  .mashin {
     width: 150px;
     height: 180px;
   }
@@ -617,7 +614,7 @@ button {
     height: 180px;
   }
   .mid_box {
-   height: 180px;
+    height: 180px;
   }
   .rt_box {
     height: 180px;
