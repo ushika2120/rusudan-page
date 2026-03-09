@@ -48,15 +48,15 @@ button {
 .logo {
   width: 90px;
   height: 60px;
-  margin-left: 100px;
+  margin-left: 80px;
   margin-top: 5px;
 }
 .title_box {
-  width: 15%;
+  width: 20%;
   height: 120px;
   display: flex;
-  justify-content: center;
   align-items: center;
+  margin-left: 25px;
 }
 .title {
   font-weight: 700;
@@ -75,16 +75,16 @@ button {
   justify-content: center;
   align-items: center;
   gap: 40px;
-  .nav_text {
-    font-weight: 300;
-    font-size: 16px;
-    font-family: nino;
-    letter-spacing: 1px;
-    color: rgb(91, 87, 78);
-  }
-  .nav_text:hover {
-    color: white;
-  }
+}
+.nav_row .nav_text {
+  font-weight: 300;
+  font-size: 16px;
+  font-family: nino;
+  letter-spacing: 1px;
+  color: rgb(91, 87, 78);
+}
+.nav_row .nav_text:hover {
+  color: white;
 }
 .search_box {
   width: 20%;
@@ -124,6 +124,36 @@ button {
   height: 50px;
   border-radius: 50%;
 }
+.contact_part {
+  width: 30%;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+}
+/* .adress{
+  display: flex;
+  align-items: center;
+}
+.tel{
+  display: flex;
+  align-content: center;
+} */
+.items_box {
+  display: flex;
+  justify-content: center;
+
+  align-items: center;
+  gap: 25px;
+}
+.item {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 1px solid gold;
+}
+
 .conteiner {
   width: 100%;
   height: 100vh;
@@ -141,14 +171,55 @@ button {
   justify-content: center;
   align-items: center;
   margin-top: 80px;
-  .losung {
-    font-weight: 700;
-    font-size: 52px;
-    letter-spacing: 1px;
-    font-family: nino;
-    color: rgb(249, 248, 246);
-  }
 }
+.losung {
+  font-weight: 700;
+  font-size: 52px;
+  letter-spacing: 1px;
+  font-family: nino;
+  color: rgb(118, 115, 109);
+  font-style: italic;
+  display: inline-block;
+  transform: skewX(-8deg);
+}
+.next_cont {
+  width: 100%;
+  height: 1000px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  background-color: rgba(251, 234, 214, 0.675);
+  gap: 30px;
+}
+.hands {
+  width: 50%px;
+  height: 600px;
+  border-radius: 20px;
+  padding-left: 50px;
+}
+.next_textbox {
+  width: 50%;
+  height: 1000px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.next_title {
+  font-weight: 300;
+  font-size: 26px;
+  font-family: nino;
+  letter-spacing: 1px;
+  color: rgb(91, 87, 78);
+}
+.next_text {
+  font-weight: 300;
+  font-size: 16px;
+  font-family: nino;
+  letter-spacing: 1px;
+  color: rgb(91, 87, 78);
+}
+
 .mid_part {
   width: 100%;
   height: 100vh;
@@ -163,11 +234,11 @@ button {
   display: flex;
   justify-content: end;
   align-items: start;
-  .cover {
-    width: 400px;
-    height: 400px;
-    border-radius: 50%;
-  }
+}
+.cover_box .cover {
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
 }
 .icons_row {
   width: 100%;
@@ -312,10 +383,10 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
-  .cont_text {
-    padding-top: 30px;
-    text-shadow: none;
-  }
+}
+.nav_list .cont_text {
+  padding-top: 30px;
+  text-shadow: none;
 }
 .soc_box {
   width: 30%;
@@ -339,26 +410,24 @@ button {
   display: flex;
 
   gap: 20px;
-  .bottom_logo {
-    width: 80px;
-    height: 80px;
-  }
+}
+.rights .bottom_logo {
+  width: 80px;
+  height: 80px;
 }
 .copy {
   width: 500px;
 }
 @media (max-width: 1080px) {
-  .head_row {
-    .logo {
-      margin-left: 30px;
-    }
+  .head_row .logo {
+    margin-left: 30px;
   }
   .menu_box {
     display: block;
-    .menu {
-      width: 50px;
-      height: 50px;
-    }
+  }
+  .menu_box .menu {
+    width: 50px;
+    height: 50px;
   }
   .nav_row {
     display: none;
