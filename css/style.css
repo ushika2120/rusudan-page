@@ -44,6 +44,7 @@ button {
   background-color: rgb(246, 248, 246);
   border-bottom: 2px solid gold;
   position: fixed;
+  z-index: 1000;
 }
 .logo {
   width: 90px;
@@ -66,6 +67,15 @@ button {
   color: rgb(91, 87, 78);
 }
 .menu_box {
+  display: none;
+  cursor: pointer;
+}
+.nav_toggle {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+.nav_overlay {
   display: none;
 }
 .nav_row {
@@ -425,14 +435,51 @@ button {
     margin-left: 30px;
   }
   .menu_box {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
   }
   .menu_box .menu {
     width: 50px;
     height: 50px;
   }
   .nav_row {
-    display: none;
+    position: fixed;
+    top: 80px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    background-color: rgb(246, 248, 246);
+    border-bottom: 2px solid gold;
+    gap: 20px;
+    padding: 20px 0;
+    transform: translateY(-10px);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+    z-index: 1101;
+  }
+  .nav_toggle:checked ~ .nav_row {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+  }
+  .nav_overlay {
+    display: block;
+    position: fixed;
+    inset: 80px 0 0 0;
+    background: rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease;
+    z-index: 1100;
+  }
+  .nav_toggle:checked ~ .nav_overlay {
+    opacity: 1;
+    pointer-events: auto;
   }
 
   .search_box {
@@ -595,10 +642,10 @@ button {
 
 @media (max-width: 420px) {
   .conteiner{
-    height: 500px;
+    height: 450px;
   }
   .mid_part{
-    height: 500px;
+    height: 450px;
   }
   .cover_box {
     width: 200px;
@@ -609,6 +656,9 @@ button {
   }
   .cover {
     display: none;
+  }
+  .bottem_row{
+    margin-top: 20px;
   }
   .bottom_part {
     padding-top: 10px;

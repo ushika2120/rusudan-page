@@ -9,9 +9,10 @@
   <body>
     <header class="main_conteiner">
       <div class="head_row">
-        <div class="menu_box">
+        <input type="checkbox" id="nav-toggle" class="nav_toggle" />
+        <label for="nav-toggle" class="menu_box" aria-label="Open menu">
           <img src="./icon/bars-solid-full.svg" alt="menu" class="menu" />
-        </div>
+        </label>
         <img src="./photo/114.png" alt="logo" class="logo" />
         <div class="title_box">
           <h2 class="title">ლაზერ რუმი</h2>
@@ -23,6 +24,7 @@
           <a href="#"><p class="nav_text">მომსახურეობა</p></a>
           <a href="#"><p class="nav_text">კონტაქტი</p></a>
         </nav>
+        <label for="nav-toggle" class="nav_overlay" aria-hidden="true"></label>
         <div class="contact_part">
           <!-- <div class="adress">
             <a href="#">
@@ -293,3 +295,6 @@
     </footer>
   </body>
 </html>
+
+
+
