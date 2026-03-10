@@ -41,7 +41,7 @@ button {
   height: 80px;
   display: flex;
   align-items: center;
-  background-color: rgba(219, 227, 214, 0.25);
+  background-color: rgb(246, 248, 246);
   border-bottom: 2px solid gold;
   position: fixed;
 }
@@ -175,10 +175,10 @@ button {
   gap: 30px;
 }
 .hands {
-  width: 50%px;
-  height: 600px;
+  width: 30%;
+  height: 350px;
   border-radius: 20px;
-  padding-left: 50px;
+  margin-left: 50px;
   border: 1px solid gold;
 }
 .next_textbox {
@@ -188,6 +188,8 @@ button {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-left: 30px;
+  gap: 30px;
 }
 .next_title {
   font-weight: 300;
@@ -199,7 +201,7 @@ button {
 .next_text {
   font-weight: 300;
   font-size: 16px;
-  font-family: nino;
+  font-family: ako;
   letter-spacing: 1px;
   color: rgb(91, 87, 78);
 }
@@ -371,9 +373,9 @@ button {
   display: flex;
   align-items: center;
   padding-left: 15px;
-  font-weight: 300;
-  font-size: 14px;
-  font-family: nino;
+  font-weight: 500;
+  font-size: 16px;
+  font-family: ako;
   letter-spacing: 1px;
   color: rgb(53, 52, 49);
   text-align: center;
@@ -453,6 +455,11 @@ button {
   .losung_box {
     margin-top: 10px;
   }
+ 
+  .hands {
+    width: 15%px;
+    height: 200px;
+  }
 }
 @media (max-width: 750px) {
   .conteiner {
@@ -523,7 +530,8 @@ button {
     display: none;
   }
   .mashin {
-    width: 40%;
+    width: 35%;
+    height: 250px;
     margin-top: 10px;
   }
   .footer_part {
@@ -569,9 +577,7 @@ button {
   .icons_row {
     width: 100%;
     height: 80px;
-
     justify-content: center;
-
     gap: 5px;
     padding-right: 0;
   }
@@ -581,18 +587,29 @@ button {
   .cont_text {
     font-size: 12px;
   }
+  .hands {
+    width: 10%px;
+    height: 150px;
+  }
 }
+
 @media (max-width: 420px) {
+  .conteiner{
+    height: 500px;
+  }
+  .mid_part{
+    height: 500px;
+  }
   .cover_box {
-    background-image: url(../photo/cover.jpg);
+    width: 200px;
+    height: 200px;
+    background-image: url(../photo/logo.png);
     background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 20px;
+    background-size: contain;
   }
   .cover {
     display: none;
   }
-
   .bottom_part {
     padding-top: 10px;
     gap: 10px;
@@ -600,7 +617,6 @@ button {
   }
   .icons_row {
     height: 800px;
-
     flex-direction: column;
   }
   .footer_part {
@@ -608,7 +624,7 @@ button {
   }
   .mashin {
     width: 150px;
-    height: 180px;
+    height: 150px;
   }
   .left_box {
     height: 180px;
@@ -618,5 +634,8 @@ button {
   }
   .rt_box {
     height: 180px;
+  }
+   .hands {
+    display: none;
   }
 }
