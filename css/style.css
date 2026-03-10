@@ -358,7 +358,9 @@ button {
   padding-left: 50px;
   gap: 30px;
 }
-
+#contact {
+  scroll-margin-top: 90px;
+}
 .contact_box {
   width: 30%;
   height: 400px;
@@ -372,7 +374,6 @@ button {
   gap: 20px;
   padding-top: 25px;
 }
-
 .cont_icon {
   width: 30px;
   height: 30px;
@@ -459,7 +460,9 @@ button {
     transform: translateY(-10px);
     opacity: 0;
     pointer-events: none;
-    transition: opacity 0.2s ease, transform 0.2s ease;
+    transition:
+      opacity 0.2s ease,
+      transform 0.2s ease;
     z-index: 1101;
   }
   .nav_toggle:checked ~ .nav_row {
@@ -481,7 +484,6 @@ button {
     opacity: 1;
     pointer-events: auto;
   }
-
   .search_box {
     width: 60%;
     height: 100px;
@@ -493,16 +495,13 @@ button {
   .contact_part {
     width: 100%;
   }
-
   .title_box {
     width: 25%;
     height: 100px;
   }
-
   .losung_box {
     margin-top: 10px;
   }
- 
   .hands {
     width: 15%px;
     height: 200px;
@@ -602,16 +601,13 @@ button {
     height: 200px;
     align-items: start;
   }
-
   .soc_box {
     width: 100%;
     height: 100px;
   }
-
   .soc_list {
     height: 70px;
   }
-
   .icon {
     width: 20px;
     height: 20px;
@@ -641,10 +637,10 @@ button {
 }
 
 @media (max-width: 420px) {
-  .conteiner{
+  .conteiner {
     height: 450px;
   }
-  .mid_part{
+  .mid_part {
     height: 450px;
   }
   .cover_box {
@@ -657,7 +653,7 @@ button {
   .cover {
     display: none;
   }
-  .bottem_row{
+  .bottem_row {
     margin-top: 20px;
   }
   .bottom_part {
@@ -686,7 +682,7 @@ button {
   .rt_box {
     height: 180px;
   }
-   .hands {
+  .hands {
     display: none;
   }
 }
