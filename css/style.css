@@ -622,7 +622,7 @@ button {
     height: 80px;
     justify-content: center;
     gap: 5px;
-    padding-right: 0;
+    padding: none;
   }
   .rights {
     gap: 0;
@@ -646,6 +646,8 @@ button {
   .cover_box {
     width: 200px;
     height: 200px;
+    display: flex;
+    align-items: center;
     background-image: url(../photo/logo.png);
     background-repeat: no-repeat;
     background-size: contain;
@@ -654,7 +656,7 @@ button {
     display: none;
   }
   .bottem_row {
-    margin-top: 20px;
+    margin-top: 0;
   }
   .bottom_part {
     padding-top: 10px;
@@ -664,6 +666,7 @@ button {
   .icons_row {
     height: 800px;
     flex-direction: column;
+    padding-top: 0;
   }
   .footer_part {
     border-top: none;
