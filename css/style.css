@@ -671,6 +671,7 @@ button {
   }
   .footer_part {
     border-top: none;
+    justify-content: end;
   }
   .mashin {
     width: 150px;
