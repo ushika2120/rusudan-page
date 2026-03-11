@@ -644,9 +644,10 @@ button {
     height: 450px;
   }
   .cover_box {
-    width: 200px;
+    width: 100%;
     height: 200px;
     display: flex;
+    justify-content: center;
     align-items: center;
     background-image: url(../photo/logo.png);
     background-repeat: no-repeat;
@@ -654,9 +655,11 @@ button {
   }
   .cover {
     display: none;
+    
   }
   .bottem_row {
     margin-top: 0;
+    gap: 0;
   }
   .bottom_part {
     padding-top: 10px;
@@ -670,7 +673,8 @@ button {
   }
   .footer_part {
     border-top: none;
-    justify-content: end;
+    justify-content: center;
+    padding-top: 80px;
   }
   .mashin {
     width: 150px;
@@ -678,12 +682,15 @@ button {
   }
   .left_box {
     height: 180px;
+    gap: 0;
   }
   .mid_box {
     height: 180px;
+    gap: 0;
   }
   .rt_box {
     height: 180px;
+    gap: 0;
   }
   .hands {
     display: none;
