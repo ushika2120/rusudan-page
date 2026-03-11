@@ -242,6 +242,9 @@ button {
   display: inline-block;
   transform: skewX(-8deg);
 }
+.losung_next {
+  display: none;
+}
 .cover_box {
   width: 30%;
   height: 400px;
@@ -643,6 +646,20 @@ button {
   .mid_part {
     height: 450px;
   }
+  .losung {
+    display: none;
+  }
+  .losung_next {
+    display: block;
+    font-weight: 700;
+    font-size: 26px;
+    letter-spacing: 1px;
+    font-family: nino;
+    color: rgb(118, 115, 109);
+    font-style: italic;
+    display: inline-block;
+    transform: skewX(-8deg);
+  }
   .cover_box {
     width: 100%;
     height: 200px;
@@ -655,7 +672,6 @@ button {
   }
   .cover {
     display: none;
-    
   }
   .bottem_row {
     margin-top: 0;
@@ -685,6 +701,7 @@ button {
     gap: 0;
   }
   .mid_box {
+    display: none;
     height: 180px;
     gap: 0;
   }
