@@ -16,6 +16,9 @@ textarea,
 button {
   border: none;
 }
+body{
+  background-color: rgb(67, 239, 67);
+}
 @font-face {
   font-family: lavishi;
   src: url(../font/Quintessential-Regular.ttf);
@@ -41,7 +44,7 @@ button {
   height: 80px;
   display: flex;
   align-items: center;
-  background-color: rgb(246, 248, 246);
+  background-color: rgb(67, 239, 67);
   border-bottom: 2px solid gold;
   position: fixed;
   z-index: 1000;
@@ -122,18 +125,18 @@ button {
   background-color: rgb(225, 234, 219);
   padding-left: 20px;
 }
-.lupa {
+/* .lupa {
   width: 25px;
   height: 25px;
   position: absolute;
   right: 5px;
   top: 3px;
-}
-.laser_icon {
+} */
+/* .laser_icon {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-}
+} */
 .contact_part {
   width: 30%;
   height: 80px;
@@ -170,7 +173,7 @@ button {
   height: 100vh;
   display: flex;
   gap: 20px;
-  background-image: url(../photo/cover\ photo.png);
+  background-image: url(../photo/backgraund\ photo.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -182,14 +185,15 @@ button {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgba(251, 234, 214, 0.978);
+  background-color: rgb(67, 239, 67);
   gap: 30px;
 }
 .next {
   width: 40%;
   height: auto;
   border-radius: 20px;
-  background-color: rgba(251, 234, 214, 0.842);
+  background-color: rgb(67, 239, 67);
+  
 }
 .next_row {
   width: 100%;
@@ -322,7 +326,7 @@ button {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgba(251, 234, 214, 0.675);
+  background-color: rgb(67, 239, 67);
   gap: 30px;
 }
 .stady_text {
@@ -345,7 +349,7 @@ button {
   height: 1000px;
   display: flex;
   flex-direction: column;
-  background-color: rgba(251, 234, 214, 0.675);
+  background-color: rgb(67, 239, 67);
   border-top: 2px solid gold;
 }
 .bottem_row {
@@ -410,7 +414,7 @@ button {
   height: 465px;
   display: flex;
   align-items: center;
-  background-color: rgba(251, 234, 214, 0.763);
+  background-color: rgb(67, 239, 67);
   border-top: 2px solid gold;
   padding-left: 50px;
   gap: 30px;
@@ -437,6 +441,17 @@ button {
   display: flex;
   align-items: center;
 }
+.mail_text {
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+  font-weight: 500;
+  font-size: 16px;
+  font-family: lavishi;
+  letter-spacing: 1px;
+  color: rgb(53, 52, 49);
+  text-align: center;
+}
 .cont_text {
   display: flex;
   align-items: center;
@@ -453,10 +468,11 @@ button {
   height: 400px;
   display: flex;
   flex-direction: column;
+  justify-content: start;
   align-items: center;
 }
 .nav_list .cont_text {
-  padding-top: 30px;
+  padding-top: 15px;
   text-shadow: none;
 }
 .soc_box {
@@ -488,7 +504,7 @@ button {
 .copy {
   width: 500px;
 }
-@media (max-width: 1080px) {
+@media (max-width: 1140px) {
   .head_row .logo {
     margin-left: 30px;
   }
@@ -574,11 +590,19 @@ button {
       font-size: 12px;
     }
   }
+  .mail_text {
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    font-weight: 500;
+    font-size: 12px;
+    
+  }
 }
-@media (max-width: 750px) {
+@media (max-width: 790px) {
   .conteiner {
     background-image: none;
-    background-color: rgba(251, 234, 214, 0.675);
+    background-color: rgba(251, 234, 214, 0.855);
   }
   .contact_part {
     width: 100%;
@@ -663,6 +687,9 @@ button {
     display: flex;
     flex-direction: column;
     gap: 0;
+  }
+  .cont_text {
+    font-size: 16px;
   }
   .nav_list {
     width: 100%;
@@ -799,6 +826,13 @@ button {
     display: flex;
     justify-content: start;
     align-items: center;
+  }
+  .next_textbox {
+    width: 100%;
+    height: auto;
+  }
+  .next_text {
+    font-size: 14px;
   }
 
   .soc_list {
