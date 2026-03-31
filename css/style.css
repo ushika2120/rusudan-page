@@ -16,8 +16,8 @@ textarea,
 button {
   border: none;
 }
-body{
-  background-color: rgb(67, 239, 67);
+body {
+  background: linear-gradient(135deg, #d4fc79, #96e6a1, #56ab2f);
 }
 @font-face {
   font-family: lavishi;
@@ -44,7 +44,7 @@ body{
   height: 80px;
   display: flex;
   align-items: center;
-  background-color: rgb(67, 239, 67);
+  background: linear-gradient(135deg, #d4f18e, #96e6a1, #6eeb35);
   border-bottom: 2px solid gold;
   position: fixed;
   z-index: 1000;
@@ -185,15 +185,14 @@ body{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgb(67, 239, 67);
+  background: linear-gradient(135deg, #d4f18e, #96e6a1, #6eeb35);
   gap: 30px;
 }
 .next {
   width: 40%;
   height: auto;
   border-radius: 20px;
-  background-color: rgb(67, 239, 67);
-  
+  background: linear-gradient(135deg, #d4f18e, #96e6a1, #6eeb35);
 }
 .next_row {
   width: 100%;
@@ -326,7 +325,7 @@ body{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgb(67, 239, 67);
+  /* background: linear-gradient(135deg, #589f37, #96e6a1, #64f023); */
   gap: 30px;
 }
 .stady_text {
@@ -349,7 +348,7 @@ body{
   height: 1000px;
   display: flex;
   flex-direction: column;
-  background-color: rgb(67, 239, 67);
+  /* background: linear-gradient(135deg, #d4f18e, #96e6a1, #6eeb35); */
   border-top: 2px solid gold;
 }
 .bottem_row {
@@ -414,7 +413,7 @@ body{
   height: 465px;
   display: flex;
   align-items: center;
-  background-color: rgb(67, 239, 67);
+  /* background: linear-gradient(135deg, #d4f18e, #96e6a1, #6eeb35); */
   border-top: 2px solid gold;
   padding-left: 50px;
   gap: 30px;
@@ -596,13 +595,12 @@ body{
     padding-left: 15px;
     font-weight: 500;
     font-size: 12px;
-    
   }
 }
 @media (max-width: 790px) {
   .conteiner {
     background-image: none;
-    background-color: rgba(251, 234, 214, 0.855);
+    background: linear-gradient(135deg, #d4f18e, #96e6a1, #6eeb35);
   }
   .contact_part {
     width: 100%;
