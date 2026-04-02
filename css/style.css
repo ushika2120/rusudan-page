@@ -17,7 +17,7 @@ button {
   border: none;
 }
 body {
-  background: linear-gradient(135deg, #d4fc79, #96e6a1, #56ab2f);
+  background: linear-gradient(135deg, #4eb11f, #96e6a1, #56ab2f);
 }
 @font-face {
   font-family: lavishi;
@@ -35,6 +35,14 @@ body {
   font-family: akko;
   src: url(../font/alk_dots.otf);
 }
+@font-face {
+  font-family: barlow;
+  src: url(../font/Barlow-Medium.ttf);
+}
+@font-face {
+  font-family:bl_barlow;
+  src: url(../font/Barlow-Bold.ttf);
+}
 .main_conteiner {
   width: 100%;
   position: relative;
@@ -44,7 +52,7 @@ body {
   height: 80px;
   display: flex;
   align-items: center;
-  background: linear-gradient(135deg, #d4f18e, #96e6a1, #6eeb35);
+  background-color: rgba(247, 248, 243, 0.74);
   border-bottom: 2px solid gold;
   position: fixed;
   z-index: 1000;
@@ -96,6 +104,13 @@ body {
   letter-spacing: 1px;
   color: rgb(91, 87, 78);
 }
+.nav_eng {
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  color: rgb(48, 47, 43);
+  font-family: bl_barlow;
+}
 .nav_row .nav_text:hover {
   color: white;
 }
@@ -124,6 +139,11 @@ body {
   outline: none;
   background-color: rgb(225, 234, 219);
   padding-left: 20px;
+}
+
+.flag {
+  width: 40px;
+  height: 30px;
 }
 /* .lupa {
   width: 25px;
@@ -173,7 +193,7 @@ body {
   height: 100vh;
   display: flex;
   gap: 20px;
-  background-image: url(../photo/backgraund\ photo.png);
+  background-image: url(../photo/122.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -192,7 +212,7 @@ body {
   width: 40%;
   height: auto;
   border-radius: 20px;
-  background: linear-gradient(135deg, #d4f18e, #96e6a1, #6eeb35);
+  
 }
 .next_row {
   width: 100%;
@@ -240,14 +260,30 @@ body {
   letter-spacing: 1px;
   color: rgb(91, 87, 78);
 }
+.next_titleeng{
+  font-weight: 300;
+  font-size: 26px;
+  font-family: bl_barlow;
+  letter-spacing: 1px;
+  color: rgb(91, 87, 78);
+  margin-left: 20px;
+}
 .next_text {
   font-weight: 300;
   font-size: 16px;
   font-family: ako;
   letter-spacing: 1px;
   color: rgb(91, 87, 78);
-}
 
+}
+.next_texteng{
+   font-weight: 300;
+  font-size: 16px;
+  font-family: barlow;
+  letter-spacing: 1px;
+  color: rgb(91, 87, 78);
+  margin-left: 20px;
+}
 .mid_part {
   width: 100%;
   height: 100vh;
@@ -274,6 +310,14 @@ body {
   display: inline-block;
   transform: skewX(-8deg);
 }
+.losung_eng{font-weight: 700;
+  font-size: 52px;
+  letter-spacing: 1px;
+  font-family: bl_barlow;
+  color: rgb(118, 115, 109);
+  font-style: italic;
+  display: inline-block;
+  transform: skewX(-8deg);}
 .losung_next {
   display: none;
 }
@@ -318,6 +362,16 @@ body {
   letter-spacing: 1px;
   color: rgb(91, 87, 78);
 }
+.ic_eng{
+  font-weight: 500;
+  font-size: 16px;
+  font-family: barlow;
+  letter-spacing: 1px;
+  color: rgb(48, 47, 43);
+}
+.ic_eng{
+
+}
 .stady_conteiner {
   width: 100%;
   height: 700px;
@@ -336,10 +390,25 @@ body {
   text-align: center;
   color: rgb(91, 87, 78);
 }
+.stady_texteng{
+  font-weight: 300;
+  font-size: 18px;
+  font-family: barlow;
+  letter-spacing: 1px;
+  text-align: center;
+  color: rgb(91, 87, 78);
+}
 .stady_smalltext {
   font-weight: 300;
   font-size: 14px;
   font-family: nino;
+  letter-spacing: 1px;
+  color: rgb(91, 87, 78);
+}
+.stady_smalltexteng{
+  font-weight: 300;
+  font-size: 14px;
+  font-family: barlow;
   letter-spacing: 1px;
   color: rgb(91, 87, 78);
 }
@@ -462,6 +531,17 @@ body {
   color: rgb(53, 52, 49);
   text-align: center;
 }
+.cont_texteng{
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+  font-weight: 500;
+  font-size: 16px;
+  font-family: barlow;
+  letter-spacing: 1px;
+  color: rgb(53, 52, 49);
+  text-align: center;
+}
 .nav_list {
   width: 30%;
   height: 400px;
@@ -469,6 +549,7 @@ body {
   flex-direction: column;
   justify-content: start;
   align-items: center;
+  gap:20px
 }
 .nav_list .cont_text {
   padding-top: 15px;
