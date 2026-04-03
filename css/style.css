@@ -235,7 +235,7 @@ textarea {
 }
 .next_row {
   width: 100%;
-  height: 500px;
+  height: 600px;
   display: flex;
   align-items: center;
   margin-top: 70px;
@@ -263,12 +263,12 @@ textarea {
 }
 .next_textbox {
   width: 40%;
-  height: 500px;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: start;
-
+  margin-top: 70px;
   margin-left: 30px;
   gap: 30px;
 }
@@ -361,13 +361,13 @@ textarea {
 }
 .icons_row {
   width: 100%;
-  height: 100px;
+  height: auto;
   display: flex;
   justify-content: end;
   align-items: center;
   gap: 20px;
-  padding-right: 50px;
-  padding-top: 25px;
+  padding-right: 30px;
+  
 }
 .icon_box {
   display: flex;
@@ -506,7 +506,7 @@ textarea {
 }
 .left_box {
   width: 30%;
-  height: 450px;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: start;
@@ -515,7 +515,7 @@ textarea {
 }
 .mid_box {
   width: 30%;
-  height: 450px;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: end;
@@ -524,7 +524,7 @@ textarea {
 }
 .rt_box {
   width: 30%;
-  height: 450px;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: start;
@@ -572,11 +572,11 @@ textarea {
 }
 .footer_part {
   width: 100%;
-  height: 465px;
+  height: auto;
   display: flex;
   align-items: center;
   /* background: linear-gradient(135deg, #d4f18e, #96e6a1, #6eeb35); */
-  border-top: 2px solid gold;
+  margin-top: 60px;
   padding: var(--section-padding-y) var(--section-padding-x);
   gap: var(--section-gap);
 }
@@ -585,7 +585,7 @@ textarea {
 }
 .contact_box {
   width: 30%;
-  height: 400px;
+  height: auto;
   display: flex;
   flex-direction: column;
   gap: 50px;
@@ -640,7 +640,7 @@ textarea {
 }
 .nav_list {
   width: 30%;
-  height: 400px;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: start;
@@ -653,7 +653,7 @@ textarea {
 }
 .soc_box {
   width: 30%;
-  height: 400px;
+  height: auto;
   display: flex;
   flex-direction: column;
 }
@@ -757,8 +757,7 @@ textarea {
     margin-top: 10px;
   }
   .hands {
-    width: 15%;
-    height: 200px;
+   display: none;
   }
   .stady_conteiner .losung {
     font-size: 30px;
@@ -793,6 +792,7 @@ textarea {
   }
   .conteiner {
     background-image: none;
+    margin-top: 100px;
     /* background: linear-gradient(135deg, #d4f18e, #96e6a1, #6eeb35); */
   }
   .contact_part {
@@ -843,6 +843,10 @@ textarea {
     gap: 20px;
     margin-top: 50px;
     padding-left: 0;
+  }
+  .next_cont{
+    height: auto;
+    margin-top: 170px;
   }
   .next_row {
     flex-direction: column;
@@ -969,6 +973,7 @@ textarea {
   }
   .conteiner {
     height: 450px;
+    margin-top: 100px;
   }
   .logo {
     width: 70px;
@@ -1016,16 +1021,18 @@ textarea {
     gap: 10px;
     border-top: none;
   }
+  
   .icons_row {
-    height: 800px;
+    height: auto;
     flex-direction: column;
     padding-top: 0;
-    margin-top: 50px;
+    margin-top: 950px;
     gap: 12px;
   }
   .footer_part {
     border-top: none;
     justify-content: center;
+    margin-top: 550px;
     padding-top: 80px;
   }
   .mashin {
@@ -1047,6 +1054,9 @@ textarea {
   }
   .hands {
     display: none;
+  }
+  .service_photo{
+    height: auto;
   }
   .contact_box {
     height: auto;
