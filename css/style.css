@@ -429,6 +429,28 @@ textarea {
   gap: var(--section-gap);
   padding: var(--section-padding-y) var(--section-padding-x);
 }
+.page-study .next_row {
+  height: auto;
+  justify-content: center;
+}
+.page-study .next_cont {
+  height: auto;
+  justify-content: flex-start;
+}
+.page-study .next_textbox {
+  height: auto;
+  width: 100%;
+  margin-left: 0;
+  align-items: center;
+}
+.page-study .stady_conteiner {
+  height: auto;
+  max-width: 920px;
+  width: 100%;
+}
+.page-service .next_textbox {
+  margin-top: 60px;
+}
 .stady_text {
   font-weight: 300;
   font-size: 18px;
