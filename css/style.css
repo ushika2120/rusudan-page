@@ -367,7 +367,6 @@ textarea {
   align-items: center;
   gap: 20px;
   padding-right: 30px;
-  
 }
 .icon_box {
   display: flex;
@@ -757,7 +756,7 @@ textarea {
     margin-top: 10px;
   }
   .hands {
-   display: none;
+    display: none;
   }
   .stady_conteiner .losung {
     font-size: 30px;
@@ -844,7 +843,7 @@ textarea {
     margin-top: 50px;
     padding-left: 0;
   }
-  .next_cont{
+  .next_cont {
     height: auto;
     margin-top: 170px;
   }
@@ -1021,7 +1020,7 @@ textarea {
     gap: 10px;
     border-top: none;
   }
-  
+
   .icons_row {
     height: auto;
     flex-direction: column;
@@ -1055,7 +1054,7 @@ textarea {
   .hands {
     display: none;
   }
-  .service_photo{
+  .service_photo {
     height: auto;
   }
   .contact_box {
