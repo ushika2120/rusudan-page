@@ -24,6 +24,14 @@ body {
   line-height: 1.5;
   font-family: ako;
 }
+html {
+  height: 100%;
+  overflow-y: scroll;
+  scrollbar-gutter: stable;
+}
+body {
+  min-height: 100%;
+}
 :root {
   --section-padding-y: 80px;
   --section-padding-x: 50px;
@@ -746,6 +754,9 @@ textarea {
 .reveal.is-visible {
   opacity: 1;
   transform: translateY(0);
+}
+.footer_part.reveal {
+  transform: none;
 }
 .icon_box.reveal,
 .left_box.reveal,
