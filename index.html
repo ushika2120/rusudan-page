@@ -361,5 +361,32 @@
         </div>
       </div>
     </footer>
+    <script>
+      const revealItems = document.querySelectorAll(
+        ".bottom_part, .icon_box, .left_box, .mid_box, .rt_box, .stady_conteiner, .footer_part",
+      );
+
+      revealItems.forEach((item, index) => {
+        item.classList.add("reveal");
+        item.style.setProperty(
+          "--reveal-delay",
+          `${Math.min(index * 0.06, 0.42)}s`,
+        );
+      });
+
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("is-visible");
+              observer.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.16 },
+      );
+
+      revealItems.forEach((item) => observer.observe(item));
+    </script>
   </body>
 </html>
