@@ -1126,14 +1126,27 @@ textarea {
   .head_row {
     align-items: center;
   }
+  .contact_part {
+    width: 100%;
+    height: auto;
+    margin-left: 0;
+  }
   .items_box {
     justify-content: center;
+    height: auto;
+    gap: 8px;
+  }
+  .nav_row {
+    top: 98px;
+  }
+  .nav_overlay {
+    inset: 98px 0 0 0;
   }
   .conteiner {
     height: auto;
     min-height: 520px;
-    margin-top: 100px;
-    padding-top: 20px;
+    margin-top: 118px;
+    padding-top: 28px;
   }
   .logo {
     width: 70px;
