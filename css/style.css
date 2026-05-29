@@ -32,6 +32,7 @@ body {
 }
 img {
   display: block;
+  max-width: 100%;
 }
 button,
 input,
@@ -395,6 +396,7 @@ textarea {
   justify-content: center;
   align-items: center;
   gap: 15px;
+  position: relative;
 }
 .icon {
   width: 50px;
@@ -681,6 +683,10 @@ textarea {
   text-align: center;
   line-height: 1.4;
 }
+.cont_text,
+.cont_texteng {
+  overflow-wrap: anywhere;
+}
 .nav_list {
   width: 30%;
   height: auto;
@@ -921,9 +927,17 @@ textarea {
     padding-top: 8px;
     padding-bottom: 8px;
   }
+  .nav_row {
+    top: 100px;
+  }
+  .nav_overlay {
+    inset: 100px 0 0 0;
+  }
   .conteiner {
     background-image: none;
     margin-top: 100px;
+    height: auto;
+    min-height: 650px;
     /* background: linear-gradient(135deg, #d4f18e, #96e6a1, #6eeb35); */
   }
   .contact_part {
@@ -939,7 +953,14 @@ textarea {
   }
   .cover_box {
     width: 100%;
+    height: auto;
     justify-content: center;
+  }
+  .cover_box .cover {
+    width: min(360px, 82vw);
+    height: auto;
+    aspect-ratio: 1;
+    object-fit: cover;
   }
   .cover {
     border-radius: 50%;
@@ -953,7 +974,8 @@ textarea {
     font-size: 12px;
   }
   .logo {
-    padding-left: 10px;
+    margin-left: 10px;
+    padding-left: 0;
   }
   .items_box {
     gap: 10px;
@@ -1011,20 +1033,25 @@ textarea {
     display: none;
   }
   .mashin {
-    width: 35%;
-    height: 250px;
+    width: min(360px, 82vw);
+    height: auto;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
     margin-top: 10px;
   }
   .footer_part {
     width: 100%;
-    height: 100vh;
+    height: auto;
+    min-height: auto;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    padding-left: 15px;
-    gap: 10px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-left: var(--section-padding-x);
+    gap: 20px;
   }
   .stady_conteiner {
+    height: auto;
     margin-top: 15px;
   }
   .contact_box {
@@ -1044,9 +1071,10 @@ textarea {
   }
   .soc_box {
     width: 100%;
-    height: 100px;
+    height: auto;
   }
   .soc_list {
+    width: 100%;
     height: 70px;
   }
   .icon {
@@ -1060,12 +1088,11 @@ textarea {
   }
   .icons_row {
     width: 100%;
-    height: 80px;
+    height: auto;
     justify-content: center;
     gap: 5px;
     padding: 0;
     flex-wrap: wrap;
-    height: auto;
   }
   .rights {
     gap: 0;
@@ -1103,8 +1130,10 @@ textarea {
     justify-content: center;
   }
   .conteiner {
-    height: 450px;
+    height: auto;
+    min-height: 520px;
     margin-top: 100px;
+    padding-top: 20px;
   }
   .logo {
     width: 70px;
@@ -1112,12 +1141,19 @@ textarea {
     margin-left: 0;
   }
   .mid_part {
-    height: 450px;
-    margin-top: 100px;
+    height: auto;
+    min-height: 360px;
+    margin-top: 0;
     gap: 40px;
+    justify-content: flex-start;
   }
   .losung {
     display: none;
+  }
+  .stady_conteiner .losung {
+    display: inline-block;
+    line-height: 1.25;
+    text-align: center;
   }
   .losung_next {
     display: block;
@@ -1129,6 +1165,8 @@ textarea {
     font-style: italic;
     display: inline-block;
     transform: skewX(-8deg);
+    line-height: 1.2;
+    text-align: center;
   }
   .cover_box {
     width: 100%;
@@ -1139,6 +1177,7 @@ textarea {
     background-image: url("../photo/ChtGPT  PM.png");
     background-repeat: no-repeat;
     background-size: contain;
+    background-position: center;
   }
   .cover {
     display: none;
@@ -1148,6 +1187,7 @@ textarea {
     gap: 0;
   }
   .bottom_part {
+    min-height: auto;
     padding-top: 10px;
     gap: 10px;
     border-top: none;
@@ -1155,32 +1195,33 @@ textarea {
 
   .icons_row {
     height: auto;
-    flex-direction: column;
+    flex-direction: row;
     padding-top: 0;
-    margin-top: 950px;
-    gap: 12px;
+    margin-top: 0;
+    gap: 14px;
   }
   .footer_part {
     border-top: none;
-    justify-content: center;
-    margin-top: 550px;
-    padding-top: 80px;
+    justify-content: flex-start;
+    margin-top: 0;
+    padding-top: 40px;
   }
   .mashin {
-    width: 150px;
-    height: 150px;
+    width: min(260px, 82vw);
+    height: auto;
+    aspect-ratio: 1;
   }
   .left_box {
-    height: 180px;
+    height: auto;
     gap: 0;
   }
   .mid_box {
     display: none;
-    height: 180px;
+    height: auto;
     gap: 0;
   }
   .rt_box {
-    height: 180px;
+    height: auto;
     gap: 0;
   }
   .hands {
@@ -1193,10 +1234,13 @@ textarea {
     height: auto;
   }
   .contact {
-    height: 35px;
+    min-height: 35px;
+    height: auto;
     display: flex;
     justify-content: start;
     align-items: center;
+    gap: 12px;
+    padding-top: 12px;
   }
   .next_textbox {
     width: 100%;
@@ -1210,9 +1254,12 @@ textarea {
     width: 100%;
     height: auto;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
   }
   .rights {
     height: auto;
+    align-items: center;
+    flex-wrap: wrap;
   }
 }
