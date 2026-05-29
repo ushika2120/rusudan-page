@@ -720,9 +720,15 @@ textarea {
   display: flex;
   gap: 30px;
 }
+.soc_list a {
+  display: inline-flex;
+  flex: 0 0 auto;
+}
 .soc_icon {
-  width: 30px;
-  height: 30px;
+  width: 34px;
+  height: 34px;
+  max-width: none;
+  flex: 0 0 auto;
   transition:
     transform 0.25s ease,
     filter 0.25s ease;
