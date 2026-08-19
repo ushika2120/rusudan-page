@@ -31,6 +31,53 @@ html {
 }
 body {
   min-height: 100%;
+  --theme-image: url("../photo/background 11.png");
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.34), rgba(255, 255, 255, 0.28)),
+    var(--theme-image);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+body.home-page {
+  --theme-image: none;
+  background: linear-gradient(135deg, #4eb11f, #96e6a1, #56ab2f);
+}
+body.page-armpits {
+  --theme-image: url("../photo/iglia.avif");
+}
+body.page-back {
+  --theme-image: url("../photo/back1.webp");
+}
+body.page-bikini,
+body.page-bikini-eng {
+  --theme-image: url("../photo/bikini1.webp");
+}
+body.page-service,
+body.page-service-eng {
+  --theme-image: url("../photo/12.jpg");
+}
+body.page-study {
+  --theme-image: url("../photo/aparati.jpg");
+}
+body.page-about,
+body.page-us,
+body.page-english,
+body.page-learn,
+body.page-breast,
+body.page-chven,
+body.page-fexi,
+body.page-heand,
+body.page-iglia,
+body.page-kheli,
+body.page-legs,
+body.page-lips,
+body.page-mkerdi,
+body.page-tuchi,
+body.page-zurgi,
+body.page-default {
+  --theme-image: url("../photo/background 11.png");
 }
 :root {
   --section-padding-y: 80px;
