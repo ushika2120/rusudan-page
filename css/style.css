@@ -334,6 +334,78 @@ textarea {
   margin-left: 30px;
   gap: 60px;
 }
+.page-service .next_row,
+.page-service-eng .next_row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  align-items: center;
+  gap: clamp(24px, 4vw, 56px);
+  height: auto;
+  min-height: 600px;
+}
+.page-service .service_photo,
+.page-service-eng .service_photo,
+.page-service .next_textbox,
+.page-service-eng .next_textbox {
+  width: 100%;
+  min-width: 0;
+  margin: 0;
+}
+.page-service .service_photo,
+.page-service-eng .service_photo {
+  height: auto;
+  align-items: center;
+  gap: 28px;
+}
+.page-service .hands,
+.page-service-eng .hands {
+  width: min(100%, 460px);
+  height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  margin: 0;
+}
+.page-service .next_textbox,
+.page-service-eng .next_textbox {
+  justify-content: center;
+  align-items: flex-start;
+  gap: 18px;
+}
+.service_prices {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+.service_price_group {
+  min-width: 0;
+  padding: 18px 14px;
+  background: rgba(247, 248, 243, 0.26);
+  border: 1px solid rgba(218, 174, 0, 0.45);
+  border-radius: 12px;
+}
+.service_price_group .next_title,
+.service_price_group .next_titleeng {
+  margin: 0 0 10px;
+  font-size: clamp(20px, 2vw, 27px);
+}
+.service_price_group .next_text,
+.service_price_group .next_texteng {
+  font-size: clamp(14px, 1.35vw, 18px);
+  line-height: 1.65;
+}
+.page-service .next_text,
+.page-service-eng .next_text,
+.page-service .next_texteng,
+.page-service-eng .next_texteng {
+  width: 100%;
+  margin-left: 0;
+  overflow-wrap: anywhere;
+}
+.page-service .next_titleeng,
+.page-service-eng .next_titleeng {
+  margin-left: 0;
+}
 .next_textbox {
   width: 40%;
   height: auto;
@@ -581,6 +653,33 @@ textarea {
   text-align: center;
 }
 .page-learn .study_card_title {
+  font-family: barlow, sans-serif;
+}
+.page-english-home .stady_conteiner > a {
+  width: 100%;
+  text-align: center;
+}
+.page-english-home .stady_conteiner > a .losung {
+  width: 100%;
+  font-family: bl_barlow, sans-serif;
+  font-size: clamp(28px, 4vw, 48px);
+  font-style: normal;
+  letter-spacing: 0.5px;
+  text-align: center;
+  transform: none;
+  animation: none;
+  color: #fffdf2;
+  text-shadow: 0 2px 5px rgba(25, 48, 29, 0.8);
+}
+.page-english-home .stady_conteiner > .stady_text,
+.page-english-home .study_card .stady_smalltexteng,
+.page-english-home .study_card .stady_texteng,
+.page-english-home .stady_conteiner > .stady_texteng {
+  font-family: barlow, sans-serif;
+  color: #fffdf2;
+  text-shadow: 0 2px 4px rgba(25, 48, 29, 0.8);
+}
+.page-english-home .study_card_title {
   font-family: barlow, sans-serif;
 }
 .page-study .next_row {
@@ -869,9 +968,9 @@ textarea {
   align-items: center;
   gap: 20px;
 }
-.nav_list .cont_text {
+.nav_list .cont_text,
+.nav_list .cont_texteng {
   padding: 0;
-  font-family: nino, sans-serif;
   font-size: 17px;
   font-weight: 700;
   letter-spacing: 0.5px;
@@ -881,7 +980,14 @@ textarea {
     color 0.25s ease,
     transform 0.25s ease;
 }
-.nav_list a:hover .cont_text {
+.nav_list .cont_text {
+  font-family: nino, sans-serif;
+}
+.nav_list .cont_texteng {
+  font-family: barlow, sans-serif;
+}
+.nav_list a:hover .cont_text,
+.nav_list a:hover .cont_texteng {
   color: #9a7610;
   transform: translateX(4px);
 }
@@ -1026,6 +1132,9 @@ textarea {
     grid-column: 1 / -1;
     width: min(560px, 100%);
     justify-self: center;
+  }
+  .service_prices {
+    grid-template-columns: 1fr;
   }
   .head_row .logo {
     margin-left: 30px;
@@ -1212,6 +1321,16 @@ textarea {
     height: auto;
     align-items: center;
   }
+  .page-service .next_row,
+  .page-service-eng .next_row {
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+  }
+  .service_prices {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
   .service_photo,
   .next_textbox {
     width: 100%;
@@ -1335,6 +1454,13 @@ textarea {
   }
   .hands {
     display: none;
+  }
+  .page-service .hands,
+  .page-service-eng .hands {
+    display: block;
+    width: min(100%, 360px);
+    height: auto;
+    margin: 0;
   }
   .nav_list {
     display: none;
@@ -1476,6 +1602,13 @@ textarea {
   }
   .hands {
     display: none;
+  }
+  .page-service .hands,
+  .page-service-eng .hands {
+    display: block;
+    width: min(100%, 360px);
+    height: auto;
+    margin: 0;
   }
   .service_photo {
     height: auto;
