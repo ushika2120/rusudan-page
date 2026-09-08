@@ -320,7 +320,7 @@ textarea {
   border-radius: 20px;
   margin-left: 50px;
   border: 1px solid gold;
-  object-fit:cover;
+  object-fit: cover;
 }
 .dall {
   width: 25%;
@@ -508,6 +508,10 @@ textarea {
 .cover_box .cover {
   width: 400px;
   height: 400px;
+  min-width: 160px;
+  min-height: 160px;
+  display: block;
+  object-fit: cover;
   border-radius: 50%;
   animation:
     softPop 1s 0.55s var(--motion-ease) both,
@@ -843,7 +847,7 @@ textarea {
   border: 1px solid gold;
   position: relative;
   cursor: pointer;
-  object-fit:cover;
+  object-fit: cover;
   transition:
     transform 0.35s var(--motion-ease),
     box-shadow 0.35s ease,
@@ -1273,9 +1277,11 @@ textarea {
   }
   .cover_box .cover {
     width: min(360px, 82vw);
-    height: auto;
-    aspect-ratio: 1;
+    height: min(360px, 82vw);
+    aspect-ratio: 1 / 1;
     object-fit: cover;
+    display: block;
+    flex-shrink: 0;
   }
   .cover {
     border-radius: 50%;
