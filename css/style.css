@@ -137,7 +137,7 @@ textarea {
 .logo {
   width: 105px;
   height: 64px;
-  object-fit: contain;
+  object-fit: cover;
   flex: 0 0 auto;
   margin-left: 80px;
   animation: softPop 0.9s 0.15s var(--motion-ease) both;
@@ -320,6 +320,7 @@ textarea {
   border-radius: 20px;
   margin-left: 50px;
   border: 1px solid gold;
+  object-fit:cover;
 }
 .dall {
   width: 25%;
@@ -842,6 +843,7 @@ textarea {
   border: 1px solid gold;
   position: relative;
   cursor: pointer;
+  object-fit:cover;
   transition:
     transform 0.35s var(--motion-ease),
     box-shadow 0.35s ease,
