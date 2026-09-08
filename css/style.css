@@ -1271,19 +1271,21 @@ textarea {
     font-size: 26px;
   }
   .cover_box {
+    display: none;
     width: 100%;
     height: auto;
     justify-content: center;
   }
   .cover_box .cover {
+    display: none;
     width: min(360px, 82vw);
     height: min(360px, 82vw);
     aspect-ratio: 1 / 1;
     object-fit: cover;
-    display: block;
     flex-shrink: 0;
   }
   .cover {
+    display: none;
     border-radius: 50%;
     border: 3px solid gold;
   }
