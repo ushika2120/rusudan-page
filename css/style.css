@@ -209,6 +209,17 @@ textarea {
   margin-left: 80px;
   animation: softPop 0.9s 0.15s var(--motion-ease) both;
 }
+.logo-link {
+  display: contents;
+}
+.logo-link:focus-visible .logo {
+  outline: 2px solid #123d28;
+  outline-offset: 3px;
+}
+.brand-title {
+  color: inherit;
+  text-decoration: none;
+}
 .title_box {
   width: 25%;
   height: 80px;
@@ -2272,7 +2283,11 @@ body.home-page .stady_conteiner > .stady_text {
   }
 }
 
-@supports (background-image: image-set(url("../photo/background-11.webp") type("image/webp"))) {
+@supports (
+  background-image: image-set(
+      url("../photo/background-11.webp") type("image/webp")
+    )
+) {
   body {
     --theme-image: url("../photo/background-11.webp");
   }
